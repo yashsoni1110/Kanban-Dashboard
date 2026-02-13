@@ -16,14 +16,9 @@ const TaskCard = ({ task, onDelete, onMove, onUpdate }) => {
 
     return (
         <div
-            className="glass-panel"
+            className="glass-panel task-card"
             style={{
-                padding: '1rem',
-                marginBottom: '1rem',
                 borderLeft: `4px solid ${priorityColor}`,
-                transition: 'transform 0.2s',
-                position: 'relative',
-                background: 'rgba(255, 255, 255, 0.4)'
             }}
             onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-2px)')}
             onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}

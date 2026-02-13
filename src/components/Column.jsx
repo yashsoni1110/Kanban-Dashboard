@@ -12,34 +12,13 @@ const Column = ({
     onUpdate
 }) => {
     return (
-        <div className="column" style={{
-            flex: 1,
-            minWidth: '300px',
-            margin: '0 1rem',
-        }}>
-            <div className="glass-panel" style={{
-                padding: '1rem',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                background: 'rgba(255, 255, 255, 0.15)'
-            }}>
-                <h2 style={{
-                    marginBottom: '1rem',
-                    color: 'var(--text-primary)',
-                    borderBottom: `3px solid var(--color-${status})`,
-                    paddingBottom: '0.5rem',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center'
+        <div className="column">
+            <div className="glass-panel column-content">
+                <h2 className="column-header" style={{
+                    borderBottom: `3px solid var(--color-${status})`
                 }}>
                     {title}
-                    <span style={{
-                        background: 'rgba(0,0,0,0.1)',
-                        borderRadius: '12px',
-                        padding: '2px 8px',
-                        fontSize: '0.8rem'
-                    }}>
+                    <span className="task-count">
                         {tasks.length}
                     </span>
                 </h2>
@@ -50,11 +29,7 @@ const Column = ({
                     </div>
                 )}
 
-                <div className="task-list" style={{
-                    flex: 1,
-                    overflowY: 'auto',
-                    paddingRight: '4px' // Space for scrollbar
-                }}>
+                <div className="task-list">
                     {tasks.map((task) => (
                         <TaskCard
                             key={task.id}

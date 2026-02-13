@@ -27,15 +27,7 @@ const Board = () => {
     };
 
     return (
-        <div className="board" style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'stretch', // Make columns same height
-            gap: '1rem',
-            padding: '1rem',
-            overflowX: 'auto', // Allow horizontal scroll on small screens
-            minHeight: '70vh'
-        }}>
+        <div className="board-container">
             <Column
                 title="To Do"
                 status="todo"
