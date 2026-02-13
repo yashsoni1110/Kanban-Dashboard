@@ -2,11 +2,9 @@
 
 A modern, responsive Kanban board application built with React and JavaScript for efficient task management.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-username%2FKanban-Dashboard)
+[![Deploy with Vercel](https://vercel.com/button)](https://kanban-dashboard-mocha-eight.vercel.app/)
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-327FC7?style=flat&logo=github&logoColor=white)](https://your-username.github.io/Kanban-Dashboard/)
-
-## 📸 Screenshots
+## 📸 Screenshot
 
 ![Kanban Dashboard Screenshot](screenshot.png)
 
